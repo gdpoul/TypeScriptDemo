@@ -1,24 +1,23 @@
-// varaiable
-export var x: string="welcome";
+class ParentClass{
+    
+    name:string;
+    id:number;
 
-// simple function
-export function myfun():void{
-    console.log("this is my function..");
+     demo(){
+     console.log("My demo ");
+     
+    }
 }
 
-// create class
-export class Myclass
-{
+class Child extends ParentClass{
+
     a:number;
-    b:number;
-    constructor(a:number,b:number)
-    {
-        this.a=a;
-        this.b=b;
-    }
+    b:string;
 
-    add=()=>
-    {
-        return(this.a+this.b);
+    demo2(){
+        console.log("my demo 2");
+        
     }
 }
+var obj=new Child();
+obj.
